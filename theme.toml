@@ -1,0 +1,16 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Kortfolio"
+license = "MIT"
+licenselink = "https://github.com/jacobkapitein/kortfolio/blob/master/LICENSE"
+description = "Kortfolio is a small portfolio theme for Hugo"
+homepage = "http://jacobkapitein.com/"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Jacob Kapitein"
+  homepage = "http://jacobkapitein.com/"
+

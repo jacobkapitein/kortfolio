@@ -1,0 +1,9 @@
+{{ partial "header.html" . }}
+
+<h1><strong>404 -</strong> Page not found</h1>
+
+<p>Sorry, this page could not be found. Perhaps it has been moved or deleted. Maybe it never even existed.<a href="{{ .Site.BaseURL }}">Click here</a> to navigate home.</p>
+
+{{ .Content }}
+
+{{ partial "footer.html" . }}

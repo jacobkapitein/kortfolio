@@ -1,0 +1,17 @@
+        {{ if isset .Params "tags" }}
+            {{ $tagsLen := len .Params.tags }}
+            {{ if gt $tagsLen 0 }}
+        <div class=taglist>
+            See related:</br>
+                {{ range $k, $v := .Params.tags }}
+                {{ $url := printf "tags/%s" (. | urlize | lower) }}
+                <a href="{{ $url | absURL }}">{{ . | title }}</a>
+                {{ if lt $k (sub $tagsLen 1) }}&middot;{{ end }}
+                {{ end }}
+            </div>
+            {{ end }}
+            {{ end }}
+        </main>
+        <footer>&copy; Jacob Kapitein 2022 - <a href="{{ .Site.BaseURL }}">{{ .Site.BaseURL }}</a></footer>
+    </body>
+</html>
